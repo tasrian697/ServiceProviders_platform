@@ -12,7 +12,7 @@
           </div>
           <div class="col-md-5">
             <img
-              src="http://localhost/Group24/img/homepage.png" alt="homepage"
+              src="img/homepage.png" alt="homepage"
               alt="Contactus"
             />
           </div>
