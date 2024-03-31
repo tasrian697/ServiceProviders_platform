@@ -38,9 +38,7 @@
             <button type="button" class="btn btn-outline-light mb-3">
               <a class="service-link" href="hassistance.php">Housing Assistance</a>
             </button>
-
             <h1>We sell.</h1>
-
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
