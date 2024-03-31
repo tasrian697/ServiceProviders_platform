@@ -21,11 +21,11 @@
             We understand the importance of mental health and the challenges individuals may face in seeking help. Our mission is to offer accessible and reliable support to those in need, fostering a community of understanding and empowerment.Join us today and take the first step towards a healthier and happier life. Your well-being is our priority, and we're here to support you every step of the way.
             </p>
           </div>
-          <div class="col-md-5"><img src="http://localhost/Group24/img/mental_health.png" alt=mental_health  style="width: 70%; height: auto" /></div>
-          <div class="col-md-5"><img src="http://localhost/Group24/img/emp_rsc.png" style="width: 80%; height: auto alt=" /></div>
+          <div class="col-md-5"><img src="img/mental_health.png" alt=mental_health  style="width: 70%; height: auto" /></div>
+          <div class="col-md-5"><img src="img/emp_rsc.png" alt=emp_rsc style="width: 80%; height: auto" /></div>
           <div class="col-md-5">
             <button type="button " class="btn btn-outline-success mb-3">
-              <a class="service-link" href="emp_rsc.php">Employment Resources</a>
+            <a class="service-link" href="emp_rsc.php">Employment Resources</a>
             </button>
 
             <h1>We promote.</h1>
