@@ -11,7 +11,7 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-5">
             <button type="button" class="btn btn-outline-warning mb-3">
-              <a class="service-link" href="mhealth_login.php">Mental Health Support</a>
+              <a class="service-link" href="mhealth_dashboard.php">Mental Health Support</a>
               
             </button>
 
@@ -22,10 +22,11 @@
             </p>
           </div>
           <div class="col-md-5"><img src="img/mental_health.png" alt=mental_health  style="width: 70%; height: auto" /></div>
+          
           <div class="col-md-5"><img src="img/emp_rsc.png" alt=emp_rsc style="width: 80%; height: auto" /></div>
           <div class="col-md-5">
             <button type="button " class="btn btn-outline-success mb-3">
-            <a class="service-link" href="emp_rsc.php">Employment Resources</a>
+              <a class="service-link" href="emp_rsc.php">Employment Resources</a>
             </button>
 
             <h1>We promote.</h1>
@@ -47,7 +48,7 @@
               sint cumque omnis iure nisi.
             </p>
           </div>
-          <div class="col-md-5"><img src="http://localhost/Group24/img/housing_assistance.png" alt=housing_assistance style="width: 80%; height: auto" /></div>
+          <div class="col-md-5"><img src="img/housing_assistance.png" alt=housing_assistance style="width: 80%; height: auto" /></div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210">
