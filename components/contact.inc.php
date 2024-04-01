@@ -1,3 +1,6 @@
+<?php
+@include 'connect.php';
+?>
 <section class="contact">
   <div class="services gradient">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
