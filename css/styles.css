@@ -26,6 +26,9 @@ body {
     rgb(34, 91, 152) 100%
   );
 }
+.Appointment{
+  color: #fff;
+}
 .page-header {
   margin-top: 4rem;
   font-size: 3rem;
