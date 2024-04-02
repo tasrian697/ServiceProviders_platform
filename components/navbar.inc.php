@@ -24,6 +24,12 @@
             <a class="nav-link" href="contact.php">Contact</a>
           </li>
         </ul>
+        <!-- Login button -->
+        <button class="btn btn-primary btn-sm"><a class="dropdown-item" href="Common_login_page.php">Log in</a></button>
+            <!-- Search form -->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
       </div>
     </div>
   </nav>
