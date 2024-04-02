@@ -9,12 +9,12 @@
         <section class="vh-100">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-md-9 col-lg-6 col-xl-4">
+    <div class="col-md-9 col-lg-6 col-xl-4">
       <h1 class="d-flex flex-column align-items-center justify-content-center "> Welcome</h1>
         <h4 class="d-flex flex-column align-items-center justify-content">Join over 4,500,000 people who decided to get help and get happy with WellBeing.</h4>
-        <img src="img/Common_login_pic.png"
-          class="img-fluid" alt="Selfcare">
+        <img src="img/Common_login_pic.png" class="img-fluid" alt="Login_Pic">
       </div>
+
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
         <form>
           <div class="d-flex flex-column align-items-center justify-content-center justify-content-lg-start">
@@ -66,7 +66,7 @@
 
           <div class="text-center text-lg-start mt-4 pt-2">
           <button type="button" class="btn btn-primary btn-md" style="">
-                <a class="nav-link" href="mhealth_dashboard.php" style="color: white;">Login</a></button>
+                <a class="nav-link" href="Common_login_page.php" style="color: white;">Login</a></button>
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
                 class="link-danger">Register</a></p>
           </div>
