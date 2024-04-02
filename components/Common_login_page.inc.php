@@ -7,7 +7,7 @@
             ></path>
         </svg>
         <section class="vh-100">
-  <div class="container-fluid h-custom">
+    <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
     <div class="col-md-9 col-lg-6 col-xl-4">
       <h1 class="d-flex flex-column align-items-center justify-content-center "> Welcome</h1>
@@ -65,7 +65,7 @@
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-          <button type="button" class="btn btn-primary btn-md" style="">
+          <button type="button" class="btn btn-primary btn-md" >
                 <a class="nav-link" href="Common_login_page.php" style="color: white;">Login</a></button>
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
                 class="link-danger">Register</a></p>
@@ -86,6 +86,3 @@
       </svg>    
 
 </section>
-    <div class="container">
-
-    </div>
