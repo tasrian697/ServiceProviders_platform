@@ -26,6 +26,9 @@ body {
     rgb(34, 91, 152) 100%
   );
 }
+.Appointment{
+  color: #fff;
+}
 .page-header {
   margin-top: 4rem;
   font-size: 3rem;
@@ -35,18 +38,48 @@ body {
 .feature {
   color: #fff;
 }
+.features{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-.feature ul {
-  padding-left: 2rem;
-  list-style-type: none;
 }
 
-.feature ul li {
-  padding-left: 2rem;
-  background-image: url(../img/check.svg);
-  background-repeat: no-repeat;
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
+.feature-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+.feature-box{
+  background-color: #fff;
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow:  5px 10px 30px rgba(0, 0, 0, 0.13);
+}
+.f-img{
+  width: 100%;
+  height: 63%;
+}
+.f-img img{
+  width: 100%;
+  height: 100%;
+}
+.f-text{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: blue
 }
 
 .icon {
