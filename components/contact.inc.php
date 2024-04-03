@@ -1,5 +1,5 @@
 <?php
-@include 'connect.php';
+@include 'connect.inc.php';
 ?>
 <section class="contact">
   <div class="services gradient">
