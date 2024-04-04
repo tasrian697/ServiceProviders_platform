@@ -24,19 +24,18 @@
               <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter a valid email address" />
 
             </div>
-            <div class="form-outline mb-3">
+              <div class="form-outline mb-3">
               <div class="form-group">
                 <div class="form-outline mb-3">
                   <label class="form-label" for="form3Example3">User Type</label>
                   <select class="form-select" aria-label="Default select example">
                     <option value="" selected disabled hidden>Select User Type</option>
-                    <option value="patient">Mental Health Service Receiver</option>
-                    <option value="patient">Mental Health Service Provider</option>
-                    <option value="doctor">Job Seeker</option>
-                    <option value="caregiver">Employment Agency </option>
-                    <option value="caregiver">Housing Assistance Seeker </option>
-                    <option value="caregiver">Housing Assistance Agency</option>
-
+                    <option value="">Mental Health Service Receiver</option>
+                    <option value="">Mental Health Service Provider</option>
+                    <option value="">Job Seeker</option>
+                    <option value="">Employment Agency </option>
+                    <option value="">Housing Assistance Seeker </option>
+                    <option value="">Housing Assistance Agency</option>
                   </select>
                 </div>
               </div>
