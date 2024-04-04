@@ -1,4 +1,4 @@
-<?php require('components/logout_nav.inc.php'); ?>
+<?php require('components/nav_logout.inc.php'); ?>
 <?php require('components/mhealth_nav.inc.php'); ?>
 <?php require('components/mhealth_dashboard.inc.php'); ?>
 <?php require('components/mhc_courses.inc.php'); ?>
