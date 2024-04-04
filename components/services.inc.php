@@ -5,45 +5,48 @@
 
   <div class="container">
     <div class="row align-items-center justify-content-center">
-      <div class="col-md-5">
-        <button type="button" class="btn btn-outline-warning mb-3">
-          <a class="service-link" href="mhealth_dashboard.php">Mental Health Support</a>
+      <div class="col-md-12 ">
+        <h1 class="text-center">Our Services</h1>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-warning mb-3">
+              <a class="service-link" href="mhealth_dashboard.php">Mental Health Support</a>
+            </button>
+            <h2>Counseling WHERE and HOW YOU Need It.</h2>
+            <p>
+              We understand the importance of mental health and the challenges individuals may face in seeking help. Our mission is to offer accessible and reliable support to those in need, fostering a community of understanding and empowerment.Join us today and take the first step towards a healthier and happier life. Your well-being is our priority, and we're here to support you every step of the way.
+            </p>
+          </div>
+          <div class="col-md-5"><img src="img/mental_health.png" alt=mental_health style="width: 70%; height: auto" /></div>
 
-        </button>
+          <div class="col-md-5"><img src="img/emp_rsc.png" alt=emp_rsc style="width: 80%; height: auto" /></div>
+          <div class="col-md-5">
+            <button type="button " class="btn btn-outline-success mb-3">
+              <a class="service-link" href="emp_rsc.php">Employment Resources</a>
+            </button>
 
-        <h1>Counseling WHERE and HOW YOU Need It.</h1>
+            <h2>We promote.</h2>
 
-        <p>
-          We understand the importance of mental health and the challenges individuals may face in seeking help. Our mission is to offer accessible and reliable support to those in need, fostering a community of understanding and empowerment.Join us today and take the first step towards a healthier and happier life. Your well-being is our priority, and we're here to support you every step of the way.
-        </p>
+            <p>
+              Our platform serves as a vital resource for individuals seeking employment and companies aiming to hire candidates. We understand the challenges individuals face in finding suitable opportunities and aim to provide accessible resources to navigate the job market successfully. Join us today to access a comprehensive range of resources and take the next step in your career journey.Join us today to access a comprehensive range of resources and take the next step in your career journey.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-light mb-3">
+              <a class="service-link" href="hassistance.php">Housing Assistance</a>
+            </button>
+
+            <h3>We sell.</h3>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
+              sint cumque omnis iure nisi.
+            </p>
+          </div>
+          <div class="col-md-5"><img src="img/housing_assistance.png" alt=housing_assistance style="width: 80%; height: auto" /></div>
+        </div>
       </div>
-      <div class="col-md-5"><img src="img/mental_health.png" alt=mental_health style="width: 70%; height: auto" /></div>
-
-      <div class="col-md-5"><img src="img/emp_rsc.png" alt=emp_rsc style="width: 80%; height: auto" /></div>
-      <div class="col-md-5">
-        <button type="button " class="btn btn-outline-success mb-3">
-          <a class="service-link" href="emp_rsc.php">Employment Resources</a>
-        </button>
-
-        <h1>We promote.</h1>
-
-        <p>
-          Our platform serves as a vital resource for individuals seeking employment and companies aiming to hire candidates. We understand the challenges individuals face in finding suitable opportunities and aim to provide accessible resources to navigate the job market successfully. Join us today to access a comprehensive range of resources and take the next step in your career journey.Join us today to access a comprehensive range of resources and take the next step in your career journey.
-        </p>
-      </div>
-      <div class="col-md-5">
-        <button type="button" class="btn btn-outline-light mb-3">
-          <a class="service-link" href="hassistance.php">Housing Assistance</a>
-        </button>
-
-        <h1>Assistance</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
-          sint cumque omnis iure nisi.
-        </p>
-      </div>
-      <div class="col-md-5"><img src="img/housing_assistance.png" alt=housing_assistance style="width: 80%; height: auto" /></div>
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210">
