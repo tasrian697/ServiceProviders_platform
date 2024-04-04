@@ -12,9 +12,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="services.php" id="navBarDropdown" role="button" data-toggle="dropdown">Services</a>
           <div class="dropdown-menu" aria-labelledby="navBarDropdown">
-            <a class="dropdown-item" href="mhealth_login.php">Mental Health Support</a>
-            <a class="dropdown-item" href="emp_rsc.php">Employment Resources</a>
-            <a class="dropdown-item" href="hassistance.php">Housing Assistance</a>
+            <a class="dropdown-item" href="services.php">Mental Health Support</a>
+            <a class="dropdown-item" href="services.php">Employment Resources</a>
+            <a class="dropdown-item" href="services.php">Housing Assistance</a>
           </div>
         </li>
         <li class="nav-item">
