@@ -9,7 +9,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
-          <div class="col-md-5"><img src="http://localhost/Group24/img/about.png" /></div>
+          <div class="col-md-5"><img src="img/about.png" /></div>
           </div>
 
           <div class="col-md-6">
