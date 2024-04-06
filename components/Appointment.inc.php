@@ -1,26 +1,21 @@
 <?php
-// Assuming you have already connected to your database
+@include 'connect.php';
 
-@include 'connect.inc.php';
-
-// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
-    $contactNo = $_POST['contactNo'];
-    $date = $_POST['date'];
-    $time = $_POST['time'];
+    $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
+    $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $contactNo = mysqli_real_escape_string($conn, $_POST['contactNo']);
+    $date = mysqli_real_escape_string($conn, $_POST['date']);
+    $time = mysqli_real_escape_string($conn, $_POST['time']);
 
-    // Insert data into the database
-    $sql = "INSERT INTO appointment dummy (firstName, lastName, emailAddress, contactNo, date, time) 
+    $sql = "INSERT INTO appointdummy (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
             VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
 
     if (mysqli_query($conn, $sql)) {
         echo "Appointment booked successfully.";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo "Error: " . mysqli_error($conn);
     }
 }
 ?>
