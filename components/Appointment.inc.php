@@ -1,25 +1,3 @@
-<?php
-@include 'connect.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
-    $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $contactNo = mysqli_real_escape_string($conn, $_POST['contactNo']);
-    $date = mysqli_real_escape_string($conn, $_POST['date']);
-    $time = mysqli_real_escape_string($conn, $_POST['time']);
-
-    $sql = "INSERT INTO appointdummy (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
-            VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
-
-    if (mysqli_query($conn, $sql)) {
-        echo "Appointment booked successfully.";
-    } else {
-        echo "Error: " . mysqli_error($conn);
-    }
-}
-?>
-
 <section class="Appointment gradient">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
