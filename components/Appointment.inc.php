@@ -1,3 +1,30 @@
+<?php
+// Assuming you have already connected to your database
+
+@include 'connect.inc.php';
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $email = $_POST['email'];
+    $contactNo = $_POST['contactNo'];
+    $date = $_POST['date'];
+    $time = $_POST['time'];
+
+    // Insert data into the database
+    $sql = "INSERT INTO appointment dummy (firstName, lastName, emailAddress, contactNo, date, time) 
+            VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
+
+    if (mysqli_query($conn, $sql)) {
+        echo "Appointment booked successfully.";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+}
+?>
+
 <section class="Appointment gradient">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -26,27 +53,27 @@
                             <h3>Book an Appointment</h3>
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
                             </div>
                             <div class="form-group">
                                 <label for="lastName">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
                             </div>
                             <div class="form-group">
                                 <label for="contactNo">Contact No</label>
-                                <input type="tel" class="form-control" id="contactNo" placeholder="Enter your contact number">
+                                <input type="tel" class="form-control" id="contactNo" name="contactNo" placeholder="Enter your contact number">
                             </div>
                             <div class="form-group">
                                 <label for="date">Date</label>
-                                <input type="text" class="form-control datepicker" id="date" placeholder="Select date">
+                                <input type="text" class="form-control datepicker" id="date" name="date" placeholder="Select date">
                             </div>
                             <div class="form-group">
                                 <label for="time">Time</label>
-                                <input type="text" class="form-control timepicker" id="time" placeholder="Select time">
+                                <input type="text" class="form-control timepicker" id="time" name="time" placeholder="Select time">
                             </div>
                             <button type="submit" class="btn btn-primary">Book Now</button>
                         </form>
