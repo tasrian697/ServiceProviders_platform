@@ -1,23 +1,40 @@
-<?php
-@include 'connect.php';
+<?php 
+include 'connect.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
-    $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $contactNo = mysqli_real_escape_string($conn, $_POST['contactNo']);
-    $date = mysqli_real_escape_string($conn, $_POST['date']);
-    $time = mysqli_real_escape_string($conn, $_POST['time']);
+  if (isset($_POST['submit'])) {
+
+    $first_name = $_POST['firstname'];
+
+    $last_name = $_POST['lastname'];
+
+    $email = $_POST['email'];
+
+    $contactNo = $_POST['contactNo'];
+
+    $date = $_POST['date'];
+
+    $time = $_POST['time'];
 
     $sql = "INSERT INTO appointdummy (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
-            VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
+    VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
 
-    if (mysqli_query($conn, $sql)) {
-        echo "Appointment booked successfully.";
-    } else {
-        echo "Error: " . mysqli_error($conn);
-    }
-}
+    $result = $conn->query($sql);
+
+    if ($result == TRUE) {
+
+      echo '<div class="alert alert-success" role="alert">New record created successfully!</div>';
+      echo "<script>console.log('New record created successfully!');</script>";
+      header( "refresh:2; url=./view.php" ); 
+
+    }else{
+
+      echo "Error:". $sql . "<br>". $conn->error;
+
+    } 
+
+    $conn->close();
+
+  }
 ?>
 <section class="Appointment gradient">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -69,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <label for="time">Time</label>
                                 <input type="text" class="form-control timepicker" id="time" name="time" placeholder="Select time">
                             </div>
-                            <button type="submit" class="btn btn-primary">Book Now</button>
+                            <button type="submit" name="submit" value="Submit" class="btn btn-primary">Book Now</button>
                         </form>
                     </div>
                 </div>
