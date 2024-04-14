@@ -3,7 +3,7 @@ html,
   height: 50px; 
 }
 .nav-item a:hover{
-  background-color: #9dc7e3;
+  background-color: #86b4d3;
     color: #fff;
 
 }
@@ -19,11 +19,11 @@ body {
   margin-left: 300px;
 }
 .gradient {
-  background: rgb(9, 48, 106);
+  background: rgb(94, 10, 100);
   background: linear-gradient(
     135deg,
-    rgb(6, 47, 109) 0%,
-    rgb(34, 91, 152) 100%
+    rgb(75, 12, 114) 0%,
+    rgb(107, 151, 179) 100%
   );
 }
 .Appointment{
@@ -52,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(207, 227, 218);
+  background-color: rgb(206, 208, 239);
 }
 .feature-box{
   background-color: #fff;
