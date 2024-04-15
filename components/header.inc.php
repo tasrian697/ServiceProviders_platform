@@ -6,8 +6,8 @@
         <p class="custom-paragraph">
           Welcome to our platform, where we bridge the gap between individuals seeking essential social services and the organizations dedicated to providing them.Join us in making a positive impact on lives within our community.
         </p>
-        <button type="button" class="btn btn-outline-success btn-lg">
-          <a class="nav-link" href="contact.php">Contact</a>
+        <button type="button" class="btn btn-outline-light mb-3">
+          <a class="nav-link" href="contact.php" style="color:aquamarine" ;>Contact</a>
         </button>
       </div>
       <div class="col-md-5">
