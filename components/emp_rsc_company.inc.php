@@ -31,6 +31,3 @@
 </table>
 
 </section>
-</table>
-
-</section>
