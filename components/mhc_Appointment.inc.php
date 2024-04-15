@@ -15,7 +15,7 @@ include 'connect.php';
 
     $time = $_POST['time'];
 
-    $sql = "INSERT INTO appointdummy (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
+    $sql = "INSERT INTO appoinment_mh (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
     VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
 
     $result = $conn->query($sql);
