@@ -22,7 +22,7 @@
           <div class="col-md-5"><img src="img/emp_rsc.png" alt=emp_rsc style="width: 80%; height: auto" /></div>
           <div class="col-md-5">
             <button type="button " class="btn btn-outline-success mb-3">
-              <a class="service-link" href="emp_rsc.php">Employment Resources</a>
+              <a class="service-link" href="emp_rsc_dashboard.php">Employment Resources</a>
             </button>
 
             <h2>We promote.</h2>
@@ -33,7 +33,7 @@
           </div>
           <div class="col-md-5">
             <button type="button" class="btn btn-outline-light mb-3">
-              <a class="service-link" href="hassistance.php">Housing Assistance</a>
+              <a class="service-link" href="hassistance_dashboard.php">Housing Assistance</a>
             </button>
 
             <h3>We sell.</h3>
