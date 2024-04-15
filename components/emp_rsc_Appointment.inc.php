@@ -1,41 +1,3 @@
-<?php 
-include 'connect.php';
-
-  if (isset($_POST['submit'])) {
-
-    $first_name = $_POST['firstname'];
-
-    $last_name = $_POST['lastname'];
-
-    $email = $_POST['email'];
-
-    $contactNo = $_POST['contactNo'];
-
-    $date = $_POST['date'];
-
-    $time = $_POST['time'];
-
-    $sql = "INSERT INTO appoinment_mh (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
-    VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
-
-    $result = $conn->query($sql);
-
-    if ($result == TRUE) {
-
-      echo '<div class="alert alert-success" role="alert">New record created successfully!</div>';
-      echo "<script>console.log('New record created successfully!');</script>";
-      header( "refresh:2; url=./view.php" ); 
-
-    }else{
-
-      echo "Error:". $sql . "<br>". $conn->error;
-
-    } 
-
-    $conn->close();
-
-  }
-?>
 <section class="Appointment gradient">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -55,7 +17,7 @@ include 'connect.php';
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="image-container">
-                            <img src="img/Appointment.png" alt="Appointment Image" class="img-fluid">
+                            <img src="img/.png" alt="Appointment Image" class="img-fluid">
                         </div>
                     </div>
                     <!-- Right Side with Appointment Form -->
@@ -64,29 +26,29 @@ include 'connect.php';
                             <h3>Book an Appointment</h3>
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
-                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
                             </div>
                             <div class="form-group">
                                 <label for="lastName">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name">
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
                             </div>
                             <div class="form-group">
                                 <label for="contactNo">Contact No</label>
-                                <input type="tel" class="form-control" id="contactNo" name="contactNo" placeholder="Enter your contact number">
+                                <input type="tel" class="form-control" id="contactNo" placeholder="Enter your contact number">
                             </div>
                             <div class="form-group">
                                 <label for="date">Date</label>
-                                <input type="text" class="form-control datepicker" id="date" name="date" placeholder="Select date">
+                                <input type="text" class="form-control datepicker" id="date" placeholder="Select date">
                             </div>
                             <div class="form-group">
                                 <label for="time">Time</label>
-                                <input type="text" class="form-control timepicker" id="time" name="time" placeholder="Select time">
+                                <input type="text" class="form-control timepicker" id="time" placeholder="Select time">
                             </div>
-                            <button type="submit" name="submit" value="Submit" class="btn btn-primary">Book Now</button>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
                         </form>
                     </div>
                 </div>

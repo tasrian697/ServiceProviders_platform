@@ -8,7 +8,7 @@
       <ul class="navbar-nav">
         <li class="nav-item mx-4"><a class="nav-link" href="emp_rsc_dashboard.php">Home</a></li>
         <li class="nav-item mx-4"><a class="nav-link" href="emp_rsc_Appointment.php">Appointment</a></li>
-        <li class="nav-item mx-4"><a class="nav-link" href="#">Company</a></li>
+        <li class="nav-item mx-4"><a class="nav-link" href="emp_rsc_company">Company</a></li>
       </ul>
     </div>
   </div>
