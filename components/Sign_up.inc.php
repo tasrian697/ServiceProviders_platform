@@ -3,20 +3,18 @@ include 'connect.php';
 
   if (isset($_POST['submit'])) {
 
-    $first_name = $_POST['firstname'];
+    $Your_name = $_POST['Your Name'];
 
-    $last_name = $_POST['lastname'];
+    $Your_Email = $_POST['Your Email'];
 
-    $email = $_POST['email'];
+    $Contact = $_POST['Contact No.']; 
 
-    $contactNo = $_POST['contactNo'];
+    $date_of_birth = $_POST['Date of Birth'];
 
-    $date = $_POST['date'];
+    $Gender = $_POST['Gender'];
 
-    $time = $_POST['time'];
-
-    $sql = "INSERT INTO appoinment_mh (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
-    VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
+    $sql = "INSERT INTO appoinment_mh (`firstName`, `emailAddress`, `contactNo` `date`, `time`) 
+    VALUES ('$Your_Name', '$Your_Email', '$email', '$Contact', '$date', '$time')";
 
     $result = $conn->query($sql);
 
@@ -49,42 +47,43 @@ include 'connect.php';
                             <div class="card-body p-5">
                                 <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
-                                <form>
+                                
+                                <form action="" method="POST">
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example1cg">Your Name</label>
-                                        <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                                        <input type="text" id="form3Example1cg" name="Your Name" class="form-control form-control-lg" />
                                     </div>
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example3cg">Your Email</label>
-                                        <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                                        <input type="email" id="form3Example3cg" name="Email" class="form-control form-control-lg" />
 
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <label class="form-label" for="form3Example4cg">Password</label>
-                                        <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example4cg">Contact No.</label>
+                                        <input type="tel" id="form3Example4cg" name="Contact No." class="form-control form-control-lg" />
                                     </div>
 
                                     <div class="form-outline mb-4">
 
                                         <label for="dob">Date of Birth:</label>
-                                        <input type="date" id="dob" name="dob" required>
+                                        <input type="date" id="dob" name="Date of Birth" required>
                                     </div>
                                     <div class="form-outline mb-4">
                                         <label for="gender">Gender:</label>
-                                        <select id="gender" name="gender" required>
+                                        <select id="gender" name="Gender" required>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                             <option value="other">Other</option>
                                         </select>
                                     </div>
 
-                                    <div class="form-outline mb-4">
+                                    <!-- <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example4cg">Password</label>
                                         <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                                    </div>
+                                    </div> -->
 
 
                                     <div class="form-check d-flex justify-content-center mb-5">
