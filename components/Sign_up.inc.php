@@ -1,7 +1,7 @@
 <?php 
 include 'connect.php';
 
-  if (isset($_POST['submit'])) {
+  if (isset($_POST['Register'])) {
 
     $Your_name = $_POST['Your Name'];
 
@@ -94,7 +94,7 @@ include 'connect.php';
                                     </div>
 
                                     <div class="d-flex justify-content-center">
-                                        <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                                        <button type="button" name="Register" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
                                     </div>
 
                                     <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="Common_login_page.php" class="fw-bold text-body"><u>Login here</u></a></p>
