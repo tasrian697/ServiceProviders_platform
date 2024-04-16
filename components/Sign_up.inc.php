@@ -3,18 +3,23 @@ include 'connect.php';
 
   if (isset($_POST['submit'])) {
 
-    $Your_name = $_POST['Your Name'];
+    $your_name = $_POST['Your_Name'];
 
-    $Your_Email = $_POST['Your Email'];
+    $your_Email = $_POST['Your_Email'];
 
-    $Contact = $_POST['Contact No.']; 
+    $contact = $_POST['Contact_No']; 
 
-    $date_of_birth = $_POST['Date of Birth'];
+    $date_of_birth = $_POST['Date_of_Birth'];
 
-    $Gender = $_POST['Gender'];
+    $gender = $_POST['Gender'];
 
+<<<<<<< Updated upstream
     $sql = "INSERT INTO `appoinment_mh` (`firstName`, `emailAddress`, `contactNo` `date`, `time`) 
     VALUES ('$Your_Name', '$Your_Email', '$email', '$Contact', '$date', '$time')";
+=======
+    $sql = "INSERT INTO `appointment_mh` (`firstName`, `emailAddress`, `contactNo`, `ddate`) 
+    VALUES ('$your_name', '$your_Email', '$contact', '$date_of_birth')";
+>>>>>>> Stashed changes
 
     $result = $conn->query($sql);
 
@@ -52,24 +57,24 @@ include 'connect.php';
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example1cg">Your Name</label>
-                                        <input type="text" id="form3Example1cg" name="Your Name" class="form-control form-control-lg" />
+                                        <input type="text" id="form3Example1cg" name="Your_Name" class="form-control form-control-lg" />
                                     </div>
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example3cg">Your Email</label>
-                                        <input type="email" id="form3Example3cg" name="Email" class="form-control form-control-lg" />
+                                        <input type="email" id="form3Example3cg" name="Your_Email" class="form-control form-control-lg" />
 
                                     </div>
 
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example4cg">Contact No.</label>
-                                        <input type="tel" id="form3Example4cg" name="Contact No." class="form-control form-control-lg" />
+                                        <input type="tel" id="form3Example4cg" name="Contact_No" class="form-control form-control-lg" />
                                     </div>
 
                                     <div class="form-outline mb-4">
 
                                         <label for="dob">Date of Birth:</label>
-                                        <input type="date" id="dob" name="Date of Birth" required>
+                                        <input type="date" id="dob" name="Date_of_Birth" required>
                                     </div>
                                     <div class="form-outline mb-4">
                                         <label for="gender">Gender:</label>
@@ -94,8 +99,13 @@ include 'connect.php';
                                     </div>
 
                                     <div class="d-flex justify-content-center">
+<<<<<<< Updated upstream
                                         <input type="submit" name="submit" value="Submit" class="btn btn-primary">
 
+=======
+                                        
+                                        <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+>>>>>>> Stashed changes
                                     </div>
 
                                     <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="Common_login_page.php" class="fw-bold text-body"><u>Login here</u></a></p>
