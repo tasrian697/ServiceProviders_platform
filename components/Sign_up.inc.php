@@ -13,13 +13,8 @@ include 'connect.php';
 
     $gender = $_POST['Gender'];
 
-<<<<<<< Updated upstream
-    $sql = "INSERT INTO `appoinment_mh` (`firstName`, `emailAddress`, `contactNo` `date`, `time`) 
-    VALUES ('$Your_Name', '$Your_Email', '$email', '$Contact', '$date', '$time')";
-=======
     $sql = "INSERT INTO `appointment_mh` (`firstName`, `emailAddress`, `contactNo`, `ddate`) 
     VALUES ('$your_name', '$your_Email', '$contact', '$date_of_birth')";
->>>>>>> Stashed changes
 
     $result = $conn->query($sql);
 
@@ -99,13 +94,8 @@ include 'connect.php';
                                     </div>
 
                                     <div class="d-flex justify-content-center">
-<<<<<<< Updated upstream
                                         <input type="submit" name="submit" value="Submit" class="btn btn-primary">
 
-=======
-                                        
-                                        <input type="submit" name="submit" value="Submit" class="btn btn-primary">
->>>>>>> Stashed changes
                                     </div>
 
                                     <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="Common_login_page.php" class="fw-bold text-body"><u>Login here</u></a></p>
