@@ -1,7 +1,7 @@
 <?php 
 include 'connect.php';
 
-  if (isset($_POST['Register'])) {
+  if (isset($_POST['submit'])) {
 
     $Your_name = $_POST['Your Name'];
 
@@ -13,7 +13,7 @@ include 'connect.php';
 
     $Gender = $_POST['Gender'];
 
-    $sql = "INSERT INTO appoinment_mh (`firstName`, `emailAddress`, `contactNo` `date`, `time`) 
+    $sql = "INSERT INTO `appoinment_mh` (`firstName`, `emailAddress`, `contactNo` `date`, `time`) 
     VALUES ('$Your_Name', '$Your_Email', '$email', '$Contact', '$date', '$time')";
 
     $result = $conn->query($sql);
@@ -94,7 +94,8 @@ include 'connect.php';
                                     </div>
 
                                     <div class="d-flex justify-content-center">
-                                        <button type="button" name="Register" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                                        <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+
                                     </div>
 
                                     <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="Common_login_page.php" class="fw-bold text-body"><u>Login here</u></a></p>
