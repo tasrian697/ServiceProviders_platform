@@ -33,7 +33,7 @@
           </div>
           <div class="col-md-5">
             <button type="button" class="btn btn-outline-light mb-3">
-              <a class="service-link" href="hassistance_dashboard.php">Housing Assistance</a>
+              <a class="service-link" href="hassistance.php">Housing Assistance</a>
             </button>
 
             <h3>We sell.</h3>
