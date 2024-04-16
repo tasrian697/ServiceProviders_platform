@@ -1,3 +1,6 @@
+<?php
+@include 'connect.inc.php';
+?>
 <section class="services gradient">
   <header class="page-header gradient ">
     <div class="container pt-6">

@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `users`
 --
 
-CREATE TABLE `appointdummy` (
+CREATE TABLE `appoinment_mh` (
   `appointId ` int(15) NOT NULL,
   `firstName` varchar(20) NOT NULL,
   `lastName` varchar(20) NOT NULL,
@@ -39,19 +39,19 @@ CREATE TABLE `appointdummy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `appointdummy`
+-- Dumping data for table `appoinment_mh`
 --
 
-INSERT INTO `appointdummy` (`appointId`, `firstname`, `lastname`, `email`, `contactNo`, `date`, `time`) VALUES ();
+INSERT INTO `appoinment_mh` (`appointId`, `firstname`, `lastname`, `email`, `contactNo`, `date`, `time`) VALUES ();
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `appointdummy`
+-- Indexes for table `appoinment_mh`
 --
-ALTER TABLE `appointdummy`
+ALTER TABLE `appoinment_mh`
   ADD PRIMARY KEY (`appointId`);
 
 --
@@ -59,9 +59,9 @@ ALTER TABLE `appointdummy`
 --
 
 --
--- AUTO_INCREMENT for table `appointdummy`
+-- AUTO_INCREMENT for table `appoinment_mh`
 --
-ALTER TABLE `appointdummy`
+ALTER TABLE `appoinment_mh`
   MODIFY `appointId` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 

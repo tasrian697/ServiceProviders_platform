@@ -1,3 +1,6 @@
+<?php
+@include 'connect.inc.php';
+?>
 <section class="features">
     <div class="feature-container">
 
