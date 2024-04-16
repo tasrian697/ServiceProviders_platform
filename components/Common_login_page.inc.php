@@ -1,5 +1,40 @@
-<?php
-@include 'connect.inc.php';
+<?php 
+include 'connect.php';
+
+  if (isset($_POST['submit'])) {
+
+    $first_name = $_POST['firstname'];
+
+    $last_name = $_POST['lastname'];
+
+    $email = $_POST['email'];
+
+    $contactNo = $_POST['contactNo'];
+
+    $date = $_POST['date'];
+
+    $time = $_POST['time'];
+
+    $sql = "INSERT INTO appoinment_mh (`firstName`, `lastName`, `emailAddress`, `contactNo`, `date`, `time`) 
+    VALUES ('$firstName', '$lastName', '$email', '$contactNo', '$date', '$time')";
+
+    $result = $conn->query($sql);
+
+    if ($result == TRUE) {
+
+      echo '<div class="alert alert-success" role="alert">New record created successfully!</div>';
+      echo "<script>console.log('New record created successfully!');</script>";
+      header( "refresh:2; url=./view.php" ); 
+
+    }else{
+
+      echo "Error:". $sql . "<br>". $conn->error;
+
+    } 
+
+    $conn->close();
+
+  }
 ?>
 <section class="services gradient">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
