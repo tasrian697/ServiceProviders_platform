@@ -1,3 +1,6 @@
+<?php
+@include 'connect.inc.php';
+?>
 <header class="page-header gradient ">
   <div class="container pt-6">
     <div class="row align-items-center justify-content-center">
