@@ -17,7 +17,6 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="image-container">
-                            <img src="img/.png" alt="Appointment Image" class="img-fluid">
                         </div>
                     </div>
                     <!-- Right Side with Appointment Form -->
